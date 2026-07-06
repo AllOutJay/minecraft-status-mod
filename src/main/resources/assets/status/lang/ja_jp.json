@@ -10,6 +10,7 @@
   "message.status.open": "オープン",
   "message.status.recording": "録音中",
   "message.status.streaming": "配信中",
+  "message.status.flashbacking": "フラッシュバック中",
   "message.status.no_sleep": "眠れない",
   "message.status.neutral": "ステータスなし"
 }

@@ -10,6 +10,7 @@
     "message.status.open": "Disponible",
     "message.status.recording": "Grabando",
     "message.status.streaming": "Retransmitiendo",
+    "message.status.flashbacking": "Flashback",
     "message.status.no_sleep": "No dormir",
     "message.status.neutral": "Sin estado"
   }

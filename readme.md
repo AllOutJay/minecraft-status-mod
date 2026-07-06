@@ -1,6 +1,6 @@
 # Status
 
-> this mod was originally created by henkelmax but has been modified for use the on the Afterlife survival server
+> this mod was originally created by henkelmax but has been modified for use the on the AfterLife survival server
 
 ## (HughBone features: Announce player statuses on login)
 

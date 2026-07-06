@@ -10,6 +10,7 @@
   "message.status.open": "Свободен",
   "message.status.recording": "Запись",
   "message.status.streaming": "Стриминг",
+  "message.status.flashbacking": "Флешбэк",
   "message.status.no_sleep": "Без сна",
   "message.status.neutral": "Нет статуса"
 }

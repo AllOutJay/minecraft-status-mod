@@ -10,6 +10,7 @@
   "message.status.open": "متاح",
   "message.status.recording": "تسجيل فيديو",
   "message.status.streaming": "بث مباشر",
+  "message.status.flashbacking": "فلاش باك",
   "message.status.no_sleep": "لا نوم",
   "message.status.neutral": "بدون حالة"
 }

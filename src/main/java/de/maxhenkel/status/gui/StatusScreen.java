@@ -18,9 +18,10 @@ public class StatusScreen extends StatusScreenBase {
     private static final Identifier NEUTRAL = Identifier.fromNamespaceAndPath(Status.MODID, "textures/icons/neutral.png");
     private static final Identifier RECORDING = Identifier.fromNamespaceAndPath(Status.MODID, "textures/icons/recording.png");
     private static final Identifier STREAMING = Identifier.fromNamespaceAndPath(Status.MODID, "textures/icons/streaming.png");
+    private static final Identifier FLASHBACKING = Identifier.fromNamespaceAndPath(Status.MODID, "textures/icons/flashbacking.png");
 
     public StatusScreen() {
-        super(Component.translatable("gui.status.title"), 145, 184);
+        super(Component.translatable("gui.status.title"), 145, 205);
     }
 
     @Override
@@ -54,6 +55,10 @@ public class StatusScreen extends StatusScreenBase {
 
         StateButton streaming = new StateButton(x, y, width, height, Component.translatable("message.status.streaming"), "streaming");
         addRenderableWidget(streaming);
+        y += height + 1;
+
+        StateButton flashbacking = new StateButton(x, y, width, height, Component.translatable("message.status.flashbacking"), "flashbacking");
+        addRenderableWidget(flashbacking);
         y += height + 5;
 
         BooleanButton noSleep = new BooleanButton(x, y, width, height, Component.translatable("message.status.no_sleep"), () -> StatusClient.STATE_MANAGER.getNoSleep(), () -> {
@@ -97,6 +102,9 @@ public class StatusScreen extends StatusScreenBase {
         y += height + 1;
 
         renderIcon(guiGraphics, STREAMING, x, y + 2, false);
+        y += height + 1;
+
+        renderIcon(guiGraphics, FLASHBACKING, x, y + 2, false);
 
         int titleWidth = font.width(getTitle());
         guiGraphics.text(font, getTitle(), guiLeft + (xSize - titleWidth) / 2, guiTop + 7, FONT_COLOR, false);

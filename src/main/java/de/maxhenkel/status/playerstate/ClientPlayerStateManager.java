@@ -121,6 +121,7 @@ public class ClientPlayerStateManager {
     private static final Identifier NO_AVAILABILITY = Identifier.fromNamespaceAndPath(Status.MODID, "textures/icons/no_availability.png");
     private static final Identifier RECORDING = Identifier.fromNamespaceAndPath(Status.MODID, "textures/icons/recording.png");
     private static final Identifier STREAMING = Identifier.fromNamespaceAndPath(Status.MODID, "textures/icons/streaming.png");
+    private static final Identifier FLASHBACKING = Identifier.fromNamespaceAndPath(Status.MODID, "textures/icons/flashbacking.png");
     private static final Identifier NEUTRAL = Identifier.fromNamespaceAndPath(Status.MODID, "textures/icons/neutral.png");
 
     @Nullable
@@ -133,6 +134,8 @@ public class ClientPlayerStateManager {
             return RECORDING;
         } else if (state.getState().equals("streaming")) {
             return STREAMING;
+        } else if (state.getState().equals("flashbacking")) {
+            return FLASHBACKING;
         } else {
             return NEUTRAL;
         }

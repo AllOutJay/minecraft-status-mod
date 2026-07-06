@@ -10,6 +10,7 @@
   "message.status.open": "Müsait",
   "message.status.recording": "Kayıtta",
   "message.status.streaming": "Yayında",
+  "message.status.flashbacking": "Flashback",
   "message.status.no_sleep": "Uyuma",
   "message.status.neutral": "Durum Yok"
 }
